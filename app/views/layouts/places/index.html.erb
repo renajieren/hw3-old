@@ -1,0 +1,15 @@
+<h1>My Travel Destinations</h1>
+
+<ul>
+  <% @places.each do |place| %>
+  
+    <li>
+      <a href="/places/<%= place.id %>"><%= place.name %></a>
+    </li>
+    
+  <% end %>
+</ul>
+
+<p>
+  <a href="/places/new">Add a Destination</a>
+</p>
